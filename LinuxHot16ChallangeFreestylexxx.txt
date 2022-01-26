@@ -1,0 +1,98 @@
+#LinuxHot16Challenge:
+
+Polecenia związane z plikami i katalogami:
+
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|1. ls      | (List)                    | #Pokazuje nam zawartość katalogu                                                                             |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|2. touch   |                           | #Tworzenie pliku np. 'touch new_file.txt'                                                                    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|3. pwd     | (Print Working Directory) | #Wyświetlenie ścieżki, w której sie znajdujemy                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|4. cd      | (Change Directory)        | #Zmiana katalogu bieżącego                                                                                   |
+|                                                                                                                                                      |  
+|        -> cd /home/user/Muzyka – przejście z bieżącego katalogu do katalogu /home/user/Muzyka                                                        |
+|        -> cd nazwa_katalogu – przejście do katalogu „nazwa_katalogu” podrzędnego w stosunku do aktualnego                                            |
+|        -> cd (bez argumentów) – przejście do naszego katalogu domowego                                                                               |
+|        -> cd ../ – przejście do katalogu nadrzędnego                                                                                                 |
+|        -> cd - – przejście do poprzedniego katalogu bieżącego                                                                                        |    
+|------------------------------------------------------------------------------------------------------------------------------------------------------|    
+|5. rmdir   | (Remove Directory)        | #Usunięcie katalogu, np 'rmdir new_folder'                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|6. mkdir   | (Make Directory)          | #Tworzenie katalogu, np.'mkdir new_folder'                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|7. man     | (Manual)                  | #Wyświetlenie pomocy dla danej komendy np. 'man cd' pokaże opis komendy oraz sposób użycia                   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|8. cat     | (Concatenation)           | #Łączenie plików, np. 'cat plik1.txt plik2.txt' lub 'cat plik1.txt plik2.txt > plik3.txt' z zapisem do       |
+|           |                           |  nowego pliku                                                                                                |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|9. cp      | (Copy)                    | #Kopiowanie pliku                                                                                            |
+|                                                                                                                                                      |
+|        -> cp sample.txt new_sample.txt - kopia z nową nazwą                                                                                          |
+|        -> cp sample.txt Pictures - kopia pliku pod tą samą nazwą, ale w podkatalogu                                                                  |
+|        -> cp sample.txt Pictures/new_sample.txt - kopia pliku, pod nową nazwą, ale w podkatalogu                                                     |
+|        -> cp -r Pictures New_Pictures - kopiowanie całych katalogów                                                                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|10. mv     | (Move)                    | #Przeniesienie pliku do innego katalogu np. 'mv sample.txt Documents', można zmienić tez nazwę pliku,        |
+|           |                           |  np. 'mv sample.txt new_file.txt'                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|11. rm     | (Remove)                  | #Usunięcie pliku np. 'rm sample.txt'                                                                         |
+|                                                                                                                                                      |
+|        -> rm -r Pictures - można usuwać całe katalogi tak jak rmdir                                                                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|12. ps     | (Process Status)          | #Wyświetla listę podstawowych procesów dla aktualnej powłoki (wiersza poleceń)                               |
+|                                                                                                                                                      |
+|        -> ps -f (full) - wyświetla pełne informacje o procesie aktualnej powłoki                                                                     |
+|        -> ps -e (every) lub ps -A (all) - działają tak samo, wyświetlają wszystkie procesy                                                           |
+|        -> można łączyć opcje, np 'ps -ef'                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|13. kill   |                           | #Zakończenie procesu podając jako argument numer PID procesu, np. kill 202                                   |
+|                                                                                                                                                      |     
+|        -> opcja -9 - bezwarunkowe zakończenie procesu (bez zapisania pracy), np. kill -9 202                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|14. locate |                           | #Znalezienia lokalizacji pliku lub folderu, np. locate Downloads -> ~/rita/Desktop/Downloads                 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|15. find   |                           | #Wyszukiwania plików i folderów                                                                              |
+|                                                                                                                                                      |
+|        -> bez parametru polecenie wyświetli listę wszystkich plików w bieżącym katalogu, a także podkatalogi w bieżącym katalogu, '.' oznacza        |
+|           bieżący katalog                                                                                                                            |
+|        -> find ./pod_folder - wyszuka wszystkie pliki w katalogu pod_folder w bieżącym katalogu                                                      |
+|        -> find -name - wyszukiwanie pliku po nazwie, np. find -name '*.rb' ['*' to wybierz wszystko]                                                 |
+|        -> find not -name '*.rb' - wyszukanie przez zaprzeczenie                                                                                      |
+|        -> find -type f -name 'xyz*' lub find -type d -name 'xyz*' - wyszukiwanie tylko plików lub folderów (f – file / d -directory)                 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|16. clear  |                           | #Wyczyszczenie terminala                                                                                     |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|17. history|                           | #Historia komend                                                                                             |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|18. chmod  | (Change Mode)             | #Zmienia prawa dostępu do pliku                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|19. exit   |                           | #Zamykanie terminala                                                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|20. vi/vim |                           | #Wbudowany edytor tekstu, najwygodniej rozpocząć pracę poprzez 'vi nazwa_pliku' (stworzy nieistniejący plik),|
+|           |                           |  np. 'vi new_file.txt'                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|21. passwd |                           | #Zmiana hasła                                                                                                |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|22. help   |                           | #Wyświetla wszystkie polecenia w Linuxie                                                                     |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|23. sudo   |                           | #Służy do uruchomienia aplikacji jako inny użytkownik (administrator)                                        |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|24. useradd|                           | #Tworzenie nowych użytkowników                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|25. userdel|                           | #Usunięcie uzytkownika                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|26. groupadd|                          | #Utworzenie nowej grupy                                                                                      |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|27. groupdel|                          | #Usunięcie grupy                                                                                             |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|28. usermod|                           | #Dodawanie użytkowników do grup                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|29. sort   |                           | #Sortowanie plików w kolejności alfabetycznej                                                                |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|30. ssh login@ip |                     | #Połączenie w oparciu o protokół SSH na użytkownika (login) do serwera (ip)                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|31. grep   |                           | #Wyszukiwania plików i wzorców, np. grep moj_wzorzec plik1                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|32. nano   |                           | #Niewielki terminalowy edytor tekstu                                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
