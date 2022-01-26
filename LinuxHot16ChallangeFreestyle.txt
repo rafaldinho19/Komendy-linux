@@ -69,7 +69,7 @@ Polecenia związane z plikami i katalogami:
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|
 |19. exit   |                           | #Zamykanie terminala                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|
-|20. vi/vim |                           | #Wbudowany edytor, najwygodniej rozpocząć pracę poprzez 'vi nazwa_pliku' (stworzy nieistniejący plik),      |
+|20. vi/vim |                           | #Wbudowany edytor tekstu, najwygodniej rozpocząć pracę poprzez 'vi nazwa_pliku' (stworzy nieistniejący plik),      |
 |           |                           |  np. 'vi new_file.txt'                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|
 
