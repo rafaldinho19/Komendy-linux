@@ -1,6 +1,4 @@
-#LinuxHot16Challenge:
-
-Polecenia związane z plikami i katalogami:
+#LinuxHot16ChallengeFreestyle:
 
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 |1. ls      | (List)                    | #Pokazuje nam zawartość katalogu                                                                             |
